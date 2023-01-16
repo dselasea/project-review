@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: #606060;
+}
+
+button {
+    background: #FF0000;
+    color: #fff;
+    border: 0;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.container {
+    width: 100%;
+    /* max-width: 1190px; */
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
+}
+
+nav {
+}
+
+nav .nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+nav .search, input[type="text"] {
+    width: 70%;
+    justify-self: center;
+}
+
+nav input[type="text"] {
+    padding: 0.85rem;
+}
+
+nav .profile img {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+section .container .section__video {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+section .container .section__video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .container .section__content--channel {
+    padding-right: 2rem;
+}
+
+section .container .section__video--details {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .container .section__video--icons i {
+    margin-left: 2.75rem;
+    padding-right: 1rem;
+    display: none;
+}
+
+section .container .section__video--icons span {
+    display: none;
+}
+
+section .container .section__video--icons i:hover {
+    cursor: pointer;
+}
+
+section .container .section__video--details h2 {
+    margin: 1rem 0;
+}
+
+section .container .section__content--author {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .container .section__video--comments {
+    margin-top: 5rem;
+}
+
+section .container .section__video--comments div {
+    margin: 1rem 0;
+}
+
+section .container .section__video--comments div h3,
+section .container .section__video--comments div p,
+section .container .section__content--channel p {
+    font-size: 1.2rem;
+}
+
+aside .video {
+    display: flex;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+aside .video .content--text {
+    padding: 0 0 0 1.5rem;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 1042px ){
+    main {
+        display: flex;
+    }
+
+    aside .container {
+        padding-left: 0;
+    }
+
+    section .container .section__video--icons i {
+    display: inline-block;
+}
+
+    section .container .section__video--icons span {
+    display: inline-block;
+}
+}
